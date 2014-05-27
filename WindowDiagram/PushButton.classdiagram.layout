@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Button">
+  <logicalClassDesignerModelMoniker Id="c6b4fd49-5a32-4038-8b6e-bd4ec62274c9" />
+  <nestedChildShapes>
+    <classShape Id="958ad818-75fc-40aa-a865-569ff7e8168c" absoluteBounds="0.5, 0.5, 3.125, 5.0664061059554406" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="1aae66ad-6498-44fb-9015-ff7db6e78917" LastKnownName="Widget" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="6cf2812c-1ac8-417a-a331-2189f5e72746" absoluteBounds="0.515, 0.89, 3.0949999999999998, 4.04492174834013" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="4183517e-58dd-49ff-9ad4-190ac564a55e" absoluteBounds="0.515, 4.9449217483401293, 3.0949999999999998, 0.52148435761531164" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4ad2f790-3338-4dad-ac01-5eea5fe12493" absoluteBounds="5, 1.375, 3, 2.3437499403953552" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="77df01a5-cc43-484c-8c3e-0eb0c2f3f7dd" LastKnownName="PushButton" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="b3e1ef24-3872-48f1-9886-f9e407a47c92" absoluteBounds="5.015, 1.7650000000000001, 2.9699999999999998, 0.52148435761531187" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="0d8dcfca-b507-488e-bec5-062faa1b3e75" absoluteBounds="5.015, 2.296484357615312, 2.9699999999999998, 1.3222655827800431" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <generalizationConnector edgePoints="[(3.625 : 2.54687497019768); (5 : 2.54687497019768)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <generalizationMoniker Id="5ab22787-8401-4d34-9072-17146bd4661d" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="958ad818-75fc-40aa-a865-569ff7e8168c" />
+        <classShapeMoniker Id="4ad2f790-3338-4dad-ac01-5eea5fe12493" />
+      </nodes>
+    </generalizationConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

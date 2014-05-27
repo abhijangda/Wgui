@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="SplitButton">
+  <logicalClassDesignerModelMoniker Id="8e6e6273-a799-4530-92e8-a999e75d7600" />
+  <nestedChildShapes>
+    <classShape Id="3a1cdb25-7e58-48f7-90c0-4d52d52bc246" absoluteBounds="6.5, 3.75, 2.5, 1.5429687152306233" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="f1cb9e29-4add-4542-a646-1e264a6b5175" LastKnownName="SplitButton" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="bf3b0968-6014-4f74-bdb0-007cffb0f3a4" absoluteBounds="6.515, 4.14, 2.4699999999999998, 0.36132811258236563" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="d7b30673-86f1-4a0a-a12f-de1e3abcb810" absoluteBounds="6.515, 4.5113281125823654, 2.4699999999999998, 0.68164060264825821" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="abe42e7a-4e51-47c1-93f3-d0ba7d031ec1" absoluteBounds="1.375, 0.75, 1.5, 3.1445311655600867" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="231caef1-10c9-430e-b68a-9b98923477be" LastKnownName="Widget" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="517ae9c5-f09c-4e84-911c-e765b78aa409" absoluteBounds="1.3899999999999997, 1.1400000000000001, 1.4700000000000002, 2.1230468079447746" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="24decb16-2b8c-4341-94b7-ae7fec1f3b5d" absoluteBounds="1.3899999999999997, 3.273046807944775, 1.4700000000000002, 0.52148435761531209" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3ef41c81-0d82-4a69-af07-5652f24f9abc" absoluteBounds="3.875, 1.375, 1.875, 4.1054686357577639" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="bcd96242-a489-4431-be51-6ecec75b51ec" LastKnownName="PushButton" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="922b6b5b-3a1c-459e-857f-a5d6dc19a8f0" absoluteBounds="3.89, 1.7650000000000001, 1.8450000000000002, 1.3222655827800431" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="6f71f6bd-8b50-45d7-9dc7-aaaffb8ba7a0" absoluteBounds="3.89, 3.097265582780043, 1.8450000000000002, 2.2832030529777207" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <generalizationConnector edgePoints="[(2.875 : 2.63476558278004); (3.875 : 2.63476558278004)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <generalizationMoniker Id="8f9f7d5f-a40f-4832-adfa-6b4e600e7bae" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="abe42e7a-4e51-47c1-93f3-d0ba7d031ec1" />
+        <classShapeMoniker Id="3ef41c81-0d82-4a69-af07-5652f24f9abc" />
+      </nodes>
+    </generalizationConnector>
+    <generalizationConnector edgePoints="[(5.75 : 4.52148435761531); (6.5 : 4.52148435761531)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <generalizationMoniker Id="ab058468-6402-457a-9729-80450d1215a1" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="3ef41c81-0d82-4a69-af07-5652f24f9abc" />
+        <classShapeMoniker Id="3a1cdb25-7e58-48f7-90c0-4d52d52bc246" />
+      </nodes>
+    </generalizationConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

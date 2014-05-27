@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{29e239ad-db22-4bed-baa8-52d17d5222c8}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>Class Diagram</Name>
+    <RootNamespace>WindowDiagram</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="false" />
+  <ItemGroup>
+    <Content Include="CheckButton.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CheckButton.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CheckButton.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="CommandLinkButton.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CommandLinkButton.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CommandLinkButton.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Container.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Container.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Container.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="ContainerXY.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ContainerXY.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ContainerXY.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="HorizontalLayout.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HorizontalLayout.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HorizontalLayout.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Layout.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Layout.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Layout.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Frame%28GroupBox%29.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Frame%28GroupBox%29.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Frame(GroupBox).classdiagram</DependentUpon>
+    </Content>
+    <Content Include="PushButton.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PushButton.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>PushButton.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="RadioButton.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="RadioButton.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>RadioButton.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="SplitButton.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SplitButton.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SplitButton.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="ThreeStateCheckButton.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ThreeStateCheckButton.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ThreeStateCheckButton.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="VerticalLayout.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="VerticalLayout.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>VerticalLayout.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="WidgetClassDiagram.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="WidgetClassDiagram.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>WidgetClassDiagram.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="WindowClass.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="WindowClass.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>WindowClass.classdiagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\WindowDiagram.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>

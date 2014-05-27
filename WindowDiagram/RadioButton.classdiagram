@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="873b9832-637a-4b96-8874-1904343a82a9" name="RadioButton" linkedPackageId="e767b363-966d-4764-959d-337f5abd82fd" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="59211fe2-1460-41cd-912b-a83c7d7cce5a" name="RadioButton" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4c479d52-8aa9-465f-a0eb-c36d65f4278d" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f8ab39c8-5e77-45de-b110-c05ee6495801" name="CheckButton" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="318d3841-71c8-4bf3-ae2c-313b2e3927bf" />
+        <generalsInternal>
+          <generalization Id="233fc9ab-686a-43e6-ab03-6a9907c90c3f" isSubstitutable="false">
+            <classMoniker Id="59211fe2-1460-41cd-912b-a83c7d7cce5a" LastKnownName="RadioButton" />
+            <elementDefinition Id="4657eb2d-6c02-46db-a5f1-725e4f9b71f9" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="56335be9-8025-41e8-a0b1-441f7c694852" name="signal_state_changed()" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9e3762f1-b79b-4443-b80d-471b0c2caf9a" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="b4762390-e9b2-4141-9af2-454ceac3e42e" name="check_button_get_state" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e1d913e0-c319-438c-a05c-033db7948e56" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="84473d92-e7ff-4205-917d-23524adf8e9f" name="Button_GetCheck" direction="In" isUnique="false">
+                  <elementDefinition Id="25dcda0e-6837-48ff-a97d-4ae98f183d9c" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="fe67b67e-73f6-423d-abd6-87f5af6fa59a" name="check_button_set_state" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1fb44ba8-6188-425b-9db2-edd1743f121f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e1078621-0b36-4419-a08b-d83edc672f96" name="Button_SetCheck" direction="In" isUnique="false">
+                  <elementDefinition Id="3e297cf9-bdfd-4463-ab60-9ed9511c5e2a" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="63bd91b4-8bc8-4de5-b616-e196e1a312ef" name="check_button_new" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="701290c3-d55b-426f-aa0c-42321362a2cb" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b1cde425-c737-43c7-b9e7-2c8b7c51fe40" name="Widget*" direction="In" isUnique="false">
+                  <elementDefinition Id="f0363441-afcb-496d-9cd8-f5578cf6ce72" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b5b8e94c-b23b-4bd6-9c6d-c21e973d1309" name="Widget" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="67e551aa-087c-469c-904a-115236df46bb" />
+        <generalsInternal>
+          <generalization Id="17e29299-aded-4610-b9dc-5fdd9499b721" isSubstitutable="false">
+            <classMoniker Id="993c4c91-e37a-4239-866d-d7565c7284ce" LastKnownName="PushButton" />
+            <elementDefinition Id="9226e0a8-c615-4779-b8a6-ad473a31550d" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="6100a3b7-b3f3-4ad1-bb62-a54b3cb0f36f" name="hwnd" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1a4c68f4-3625-4d42-8918-cd002fd4ffe1" />
+          </property>
+          <property Id="48581ca3-ce63-4ea6-98dc-9bedf41a2183" name="id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2e130341-0f15-42fb-b8c1-8b94d90b7d5f" />
+          </property>
+          <property Id="05996306-b274-41d6-9bae-b42e903e362f" name="signal_created" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1ef304da-2bdc-4720-8c0a-a64286c07f4e" />
+          </property>
+          <property Id="c9e2af38-0c9f-4686-8aea-adf34b404036" name="signal_destroyed" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="31595c00-1b50-46c7-8082-827c54e0e297" />
+          </property>
+          <property Id="d0a81161-833b-4e42-ba70-0d716cc7ee57" name="signal_show" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="401719d3-c200-4673-bf97-4832c5e1738e" />
+          </property>
+          <property Id="2556a80f-8bdd-486e-a156-a8d2c5911343" name="signal_hide" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7630b089-ccd3-495c-9a36-f0986786b845" />
+          </property>
+          <property Id="edae9997-7d7f-44bc-afc4-913b128b756d" name="signal_key_press" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8c91ca26-78c2-45fa-bbac-f42951b86933" />
+          </property>
+          <property Id="08b4c877-ced9-4f29-9cb0-a9d32146d6ec" name="signal_key_release" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="05bdb91d-f433-47ef-b8c4-4c8c15878d3b" />
+          </property>
+          <property Id="6f12e3de-c497-4c37-a29a-1dc367ca6664" name="signal_button_press" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="aeae8581-5980-4af9-9b01-1edaf4d32692" />
+          </property>
+          <property Id="2da44993-c8a8-470a-ad8f-cdc8c2db8231" name="signal_button_release" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7c4a671c-dad9-4d61-87d8-0732e9508fb5" />
+          </property>
+          <property Id="44adc760-8f04-427a-b830-b0c9984bb691" name="signal_paint" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="40e44d79-c95f-46c1-85ce-4f28e24f28da" />
+          </property>
+          <property Id="aa672803-5f57-41d7-9060-5df7f5eb4b74" name="class_name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="81aaddcc-99ff-4ec3-b85e-5cfd9c608772" />
+          </property>
+          <property Id="0f33aa9d-a779-4f51-8553-c5cd10f09ee8" name="signal_left_button_down(WM_LBUTTONDOWN)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d6e3a08d-25a9-41bb-b0ab-f4c4c579aca1" />
+          </property>
+          <property Id="cce2c8bc-2b5c-43c3-8090-d0b348971264" name="signal_left_button_up(WM_LBUTTONUP)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="564fe602-f009-47d2-8a4f-5a048c1ac26d" />
+          </property>
+          <property Id="5cddc592-34c3-4e1d-963b-460c2f66347f" name="signal_mouse_activate(WM_MOUSEACTIVATE)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1f832f71-8176-4b52-813e-f9b1afe96569" />
+          </property>
+          <property Id="a55a8717-6a59-41c1-be97-b381b2bc9266" name="signal_mouse_capture_lost(WM_CAPTURECHANGED)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3e744794-dc7e-4f4e-bafb-465ce4f263e7" />
+          </property>
+          <property Id="e3713fce-434d-4415-b52f-aab4df2eaa89" name="signal_mouse_hover(WM_MOUSEHOVER)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1f46dec4-3c7f-49ae-a28c-93a9194343d2" />
+          </property>
+          <property Id="cff79f09-d083-4732-b52c-2b16f0a730f3" name="signal_mouse_leave(WM_MOUSELEAVE)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="11309f9b-04a5-47cc-9b77-8e9b66d16192" />
+          </property>
+          <property Id="d4f8679a-81ea-4de0-afd1-17cfcf5c9fc5" name="signal_mouse_left_button_dbl_click(WM_LBUTTONDBLCLICKED)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cc1d8d1a-5407-4996-bca7-c61d00459bf2" />
+          </property>
+          <property Id="166ef912-1bab-45c0-94e2-089ab605abac" name="signal_mouse_move(WM_MOUSEMOVE)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9ac5b445-8444-4f28-ba8e-d5062fc260af" />
+          </property>
+          <property Id="cf1dafbd-a3a9-4898-bdca-2915861fd588" name="signal_right_button_click(WM_RBUTTONDOWN)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2d6578cf-d1a6-4308-a81c-c979e9fb26c9" />
+          </property>
+          <property Id="2f9fb8bc-a446-40a9-a843-6b894247d034" name="signal_right_button_dbl_click(WM_RBUTTONDBLCLICK)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="20b6475b-b837-4d58-9010-7ab331248512" />
+          </property>
+          <property Id="8959eece-d695-4b47-bdc3-501a8d63da71" name="signal_right_button_up(WM_RBUTTONUP)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bbc63905-b9d3-4492-b036-626bd348055a" />
+          </property>
+          <property Id="70bb491e-8616-440d-9691-b7ae7cb97cea" name="parent" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9373cd3e-a3b8-45ed-bbdb-f27d8314204b" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="1cfdf065-6ee2-4f62-8e9c-4e9649337b1d" name="widget_new" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fd2212b0-110b-4035-b909-7bc1fe786dd7" />
+          </operation>
+          <operation Id="2dcab81d-94ce-4aa6-a4fe-b720bcba1870" name="widget_destroy" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ad08a172-6ad0-48b4-a6f2-181930497b68" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f3a1111d-f351-45e7-b608-a3886997d2c2" name="Widget*" direction="In" isUnique="false">
+                  <elementDefinition Id="ff638f82-ca39-4ce1-979a-5e111276b6fe" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="993c4c91-e37a-4239-866d-d7565c7284ce" name="PushButton" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7d9f7495-4f45-4bae-bcbd-ae228c07c442" />
+        <generalsInternal>
+          <generalization Id="f7c1b900-f905-4ce2-9be2-cb5df9722c94" isSubstitutable="false">
+            <classMoniker Id="f8ab39c8-5e77-45de-b110-c05ee6495801" LastKnownName="CheckButton" />
+            <elementDefinition Id="36e3f8ee-b46e-4ba6-9f17-041dc3008ac6" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="4d2a2e4e-50a7-4ef4-b2c8-499622107a50" name="signal_clicked()" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="67c06602-d9ec-496e-92a3-337230973a97" />
+          </property>
+          <property Id="f4288269-0be3-4731-b88d-b7b473b21667" name="signal_double_clicked" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7ad144a0-95dc-4a8a-818b-00a340ef61ba" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="271aa23c-5d1a-498e-95ac-a861383b5545" name="button_get_ideal_size" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e272d002-1b25-48c7-b992-dc34957cd842" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="073449ec-7037-43af-b037-6594f513bfed" name="Button_GetIdealSize()" direction="In" isUnique="false">
+                  <elementDefinition Id="e8684803-969c-4649-ac77-d4787b7099b5" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="557d9f57-5e71-483f-b6c1-ab705b17ee0d" name="button_get_image_list" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2dcd5f4c-3c76-4b19-9b50-129d6aae1d88" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7abf7504-2b13-4cd1-a748-21d47cce7e8f" name="Button_GetImageList()" direction="In" isUnique="false">
+                  <elementDefinition Id="88efdc3d-9cb4-4281-b0ba-de2209343e72" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="459b1d95-67e4-4cfb-b1a8-5e209f5be565" name="button_get_text" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="67ce5c40-dff5-4ffe-8434-73c544e9e3ff" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ec20c6b5-5711-40ab-b2ce-34de13dd9f39" name="Button_GetText()" direction="In" isUnique="false">
+                  <elementDefinition Id="98ac7039-b997-4c96-b666-9b781f2a5e10" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b9e39e08-aa3c-42ca-80bb-3a13cb25c15a" name="button_get_text_length" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2b8c0cc6-99e0-401a-b2a3-ca6da42cd802" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a4db92d9-2f67-44da-8f97-f3714b23cbf7" name="Button_GetTextLength()" direction="In" isUnique="false">
+                  <elementDefinition Id="0f7247f0-738d-4585-bd25-9c5b2ea284eb" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b0e2eac2-03ac-4d61-817e-9d12c6cc73f7" name="button_get_text_margin" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0d19931e-5f82-4dd5-b148-7c8f7cc6b16b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="cfc79c09-64e1-4984-a2b4-d33b2f02cfc1" name="Button_GetTextMargin()" direction="In" isUnique="false">
+                  <elementDefinition Id="50573c63-9e8c-4948-abe0-f7b8983bb011" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="7e5bb55b-b653-42c6-9c38-d0492a539124" name="button_set_text" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ab603414-f1a1-4b2b-a508-5f4922431b41" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a8abd9ac-a7cb-422b-9db3-a00b6c5162d6" name="Button_SetText()" direction="In" isUnique="false">
+                  <elementDefinition Id="42f71bcd-b285-433f-87a5-80eb130bcbfa" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="98b89777-79c6-40d2-893d-40a127369bc5" name="button_set_text_margin" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="339dfcff-b7f0-4577-a484-b3a9062ea556" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ef9947df-3b71-46f6-84b0-b2d528f92af4" name="Button_SetTextMargin()" direction="In" isUnique="false">
+                  <elementDefinition Id="ee4eea9f-250c-4e87-b8fc-47f9a6d6df79" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="e767b363-966d-4764-959d-337f5abd82fd" name="WindowDiagram">
+    <elementDefinition Id="048e0b6d-f99b-44c5-90ce-07283f0b8931" />
+    <profileInstances>
+      <packageHasProfileInstances Id="a5735ffe-5542-4704-a1e5-5dc870a8c279">
+        <profileInstance Id="19f5ca65-ae5b-495b-b642-66465802a985" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="4d83de19-6ae4-4c23-a241-a045f07921c6">
+        <profileInstance Id="98cb5474-b78a-4c4f-9369-b493250aeade" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

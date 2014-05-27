@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.25, 8.5" name="CommandLinkButton">
+  <logicalClassDesignerModelMoniker Id="dde65942-5915-4800-a0b7-cb921012afc8" />
+  <nestedChildShapes>
+    <classShape Id="1f6cd697-1f6e-4006-984f-08de50cde0b0" absoluteBounds="0.5, 1, 2.25, 5.0664061059554406" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="3ff40939-8974-474b-bbea-cc4f1e16017f" LastKnownName="Widget" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="3ef39578-4871-4af2-8995-229e54538d1e" absoluteBounds="0.515, 1.3900000000000001, 2.2199999999999998, 4.04492174834013" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="6a9ed34f-647e-44e6-a7a9-770e1932fdd0" absoluteBounds="0.515, 5.4449217483401293, 2.2199999999999998, 0.52148435761531164" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a553ee0c-fc7e-4b0a-8e9b-a3668cbdb1ee" absoluteBounds="7.375, 2, 3.625, 1.3828124701976776" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="c95f2972-dd89-40a9-a909-d0701864837a" LastKnownName="CommandLinkButton" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="f8c96012-9cce-4f43-9660-c41033a9917f" absoluteBounds="7.39, 2.39, 3.5949999999999998, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="daa91d02-073b-4ed6-ba3a-7ab424c274da" absoluteBounds="7.39, 2.6011718675494193, 3.5949999999999998, 0.6816406026482581" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="64b13d1c-6d68-4cf5-83aa-2de206a9a51c" absoluteBounds="3.5, 1.75, 3, 2.3437499403953552" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="ecd01918-a858-4b56-a135-99cfd486ec60" LastKnownName="PushButton" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="7ef5d026-83c3-401b-9ed9-dc0aa6316941" absoluteBounds="3.5149999999999997, 2.14, 2.9699999999999998, 0.52148435761531187" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="748df2d2-84b2-457c-8d18-05169b69c8de" absoluteBounds="3.5149999999999997, 2.671484357615312, 2.9699999999999998, 1.3222655827800431" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <generalizationConnector edgePoints="[(2.75 : 2.92187497019768); (3.5 : 2.92187497019768)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <generalizationMoniker Id="be0c51a1-b7c4-4032-9c1a-3ad173649885" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="1f6cd697-1f6e-4006-984f-08de50cde0b0" />
+        <classShapeMoniker Id="64b13d1c-6d68-4cf5-83aa-2de206a9a51c" />
+      </nodes>
+    </generalizationConnector>
+    <generalizationConnector edgePoints="[(6.5 : 2.69140623509884); (7.375 : 2.69140623509884)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <generalizationMoniker Id="626b9bf2-75a8-4bfc-b09c-9dd50df7419d" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="64b13d1c-6d68-4cf5-83aa-2de206a9a51c" />
+        <classShapeMoniker Id="a553ee0c-fc7e-4b0a-8e9b-a3668cbdb1ee" />
+      </nodes>
+    </generalizationConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>
